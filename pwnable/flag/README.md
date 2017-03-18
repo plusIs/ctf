@@ -13,4 +13,8 @@ This is reversing task. all you need is binary
 ```bash
 upx -d -o flag_unpack flag
 ```
-生成
+生成了脱壳后的文件`flag__unpack`  
+丢入ida后f5看到提示`I will malloc() and strcpy the flag there. take it.`  
+于是在`return 0`前下断点，调试后查看rax的内存地址看到flag   
+`UPX...? sounds like a delivery service :)`  
+![](img/2.png)  
