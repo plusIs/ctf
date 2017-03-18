@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 void func(int key){
+	int a=0,b=1,c=2;
 	char overflowme[32];
-	printf("%p,%p,%p\n", overflowme, &key, &overflowme[32]);
 	printf("overflow me : ");
 	gets(overflowme);	// smash me!
 	printf("%d\n",key);
