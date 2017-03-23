@@ -1,4 +1,4 @@
-# bof
+# flag
 原题说明  
 >Papa brought me a packed present! let's open it.  
 Download : http://pwnable.kr/bin/flag  
