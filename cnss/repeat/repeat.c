@@ -4,7 +4,7 @@
 #include <string.h>
 void getflag()
 {
-    system("/bin/sh");
+    system("cat flag");
 }
 
 int main()
