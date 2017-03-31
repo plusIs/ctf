@@ -4,7 +4,7 @@
 #include <string.h>
 void getflag()
 {
-    system("cat flag");
+    system("/bin/sh");
 }
 
 int main()
@@ -17,7 +17,7 @@ int main()
     puts("Haha, your input is:");
     printf(str);
     putchar('\n');
-    //printf("%08x\n", *(int*)(0x0804a01c));    
-    printf("the length of your input is %d \n", strlen(str));
+    //printf("address=[%08x]\n", *(int*)(0x0804a020));    
+    printf("the length of your input is %ud \n", strlen(str));
     return 0;
 }

